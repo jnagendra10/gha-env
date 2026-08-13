@@ -2,10 +2,10 @@ name: Env Deployment Test
 on:
   push:
     branches:
-      - main
+      - master
       - dev
-#env:
-#  MONGODB_DB_NAME: gha-demo
+env:
+  MONGODB_DB_NAME: gha-demo
 jobs:
   test:
     environment: testing
