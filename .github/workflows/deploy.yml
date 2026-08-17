@@ -1,4 +1,4 @@
-name: Env Deployment Test1
+name: Env Deployment Dev
 on:
   push:
     branches:
