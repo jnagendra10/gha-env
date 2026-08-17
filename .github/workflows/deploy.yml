@@ -1,4 +1,4 @@
-name: Env Deployment Test1
+name: Env Deployment
 on:
   push:
     branches:
@@ -11,8 +11,8 @@ jobs:
     environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.ut9t4n2.mongodb.net
-      MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
-      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
+      MONGODB_USERNAME: mongoadmin
+      MONGODB_PASSWORD: tZNVq6HQyAP6wB
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
